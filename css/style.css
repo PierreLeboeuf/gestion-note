@@ -1,0 +1,383 @@
+/* -------------------------------------------------------- */
+/* Style Général */
+/* -------------------------------------------------------- */
+/* Réinitialisation simple */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    color: #444444;
+    background-color: #c4c4c4;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    /* background: url(img/cooking.jpg) no-repeat center center fixed; */
+     background-size: cover; /* L'image couvre toute la zone */
+      position: relative; /* Nécessaire pour le pseudo-élément du filtre */
+         display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body takes at least the full viewport height */
+    margin: 0; /* Remove default body margin */
+    text-align: center;
+    
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Couleur du filtre (noir avec 40% d'opacité) */
+    /* background-color: rgba(0, 0, 0, 0.4);  */
+    /* Vous pouvez changer la couleur et l'opacité selon vos préférences */
+    /* Par exemple, un filtre sépia: background-color: rgba(112, 66, 20, 0.3); */
+    /* Ou un filtre de couleur unie: background-color: rgba(100, 149, 237, 0.2); (Bleu clair avec 20% d'opacité) */
+    z-index: -1; /* Place le filtre derrière le contenu du body */
+}
+h1,
+h5 {
+    font-family: "Crete Round", serif;
+    font-size: 50px;
+}
+
+h2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+/* -------------------------------------------------------- */
+/* Style Header */
+/* -------------------------------------------------------- */
+header {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+header .rose {
+    color: #e99b36;
+    font-family: "Crete Round", serif;
+    font-size: 50px;
+}
+
+/* -------------------------------------------------------- */
+/* Style NavBar (Menu) */
+/* -------------------------------------------------------- */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #36bfe9;
+    padding: 2rem;
+}
+
+
+.navbar li {
+    margin-right: 2rem;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.navbar a:hover{
+       background-color: #c4c4c4;
+    padding: 5px;
+    border-radius: 15px;
+}
+.navbar a {
+    color: #444444;
+}
+
+.navbar a.active{
+       background-color: #2d9fc2;
+    padding: 5px;
+    border-radius: 15px;
+}
+/* -------------------------------------------------------- */
+/* Style Tableau */
+/* -------------------------------------------------------- */
+.tableau{
+    background-color: white;
+    border: 2px solid black;
+}
+
+.tableau-contenu{
+    background-color: wheat;
+    /* border: 1px solid black; */
+}
+
+td{
+      border: 1px solid black;
+}
+
+ .tableau th a {
+        text-decoration: none;
+        color: inherit; /* Conserver la couleur du texte de l'en-tête */
+        display: block; /* Rendre le lien prendre toute la surface du th */
+        padding: 5px 0;
+    }
+    .tableau th a:hover {
+        text-decoration: underline;
+    }
+
+/* -------------------------------------------------------- */
+/* Style Formulaire */
+/* -------------------------------------------------------- */
+
+form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    width: 300px;
+    margin-left: 1125px;
+    border-radius: 10px;
+    padding: 30px;
+}
+label{
+    margin-top: 10px;
+}
+#titre{
+    margin-top: 5px;
+padding: 5px 5px 5px 5px;
+border: 1px solid #c9c9c9;
+outline-color: lightblue;
+border-radius: 5px;
+
+}
+
+/* .prenom{
+    margin-top: 10px;
+} */
+#real{
+     margin-top: 5px;
+padding: 5px 5px 5px 5px;
+border: 1px solid #c9c9c9;
+outline-color: lightblue;
+border-radius: 5px;
+
+}
+/* .email{
+    margin-top: 10px;
+} */
+#annee{
+     margin-top: 5px;
+padding: 5px 5px 5px 5px;
+border: 1px solid #c9c9c9;
+outline-color: lightblue;
+border-radius: 5px;
+
+}
+/* .password{
+    margin-top: 10px;
+} */
+#genre{
+     margin-top: 5px;
+padding: 5px 5px 5px 5px;
+border: 1px solid #c9c9c9;
+outline-color: lightblue;
+border-radius: 5px;
+
+}
+/* .age{
+    margin-top: 10px;
+} */
+#resume{
+     margin-top: 5px;
+padding: 5px 5px 5px 5px;
+border: 1px solid #c9c9c9;
+outline-color: lightblue;
+border-radius: 5px;
+
+}
+
+#bouton{
+    background-color: lightblue;
+    font-size:larger;
+padding: 5px 50px 5px 50px;
+margin-top: 20px;
+border: 1px solid #c9c9c9;
+outline-color: lightblue;
+border-radius: 5px;
+
+}
+.error-border {
+  border: 1px solid red;
+}
+
+
+
+/* -------------------------------------------------------- */
+/* Style Footer */
+/* -------------------------------------------------------- */
+
+footer {
+    background-color: #36bfe9;;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+h5 {
+    color: white;
+}
+
+/* footer .rose {
+    color: #e99b36;
+    font-family: "Crete Round", serif;
+    font-size: 50px;
+} */
+
+footer p {
+    color: #767676;
+    font-size: 10px;
+}
+
+/* -------------------------------------------------------- */
+/* Style Card */
+/* -------------------------------------------------------- */
+
+.choix a{
+        margin-bottom: 30px;
+    margin-right: 30px;
+}
+.choix a:hover {
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 15px;
+    /* Assombrissement au survol */
+}
+
+.categorie-section {
+    margin-bottom: 30px;
+    margin-right: 30px;
+    border: 2px solid #ddd;
+}
+
+.categorie-section h2,
+.choix{
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* .recettes-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center; 
+    } */
+
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.recette-card {
+    /* Mise en page */
+    display: flex;
+    /* Permet un alignement flexible du contenu interne */
+    flex-direction: column;
+    /* Empile le contenu verticalement */
+
+    /* Dimensions et espacement */
+    width: 300px;
+    /* Largeur fixe, ajustez selon le besoin. Ou max-width: 100%; pour responsive */
+    margin: 20px;
+    /* Espacement autour de la carte */
+    padding: 20px;
+    /* Espacement interne pour le contenu */
+
+    /* Apparence visuelle */
+    background-color: #ffffff;
+    /* Fond blanc */
+    border: 1px solid #e0e0e0;
+    /* Bordure légère */
+    border-radius: 8px;
+    /* Coins arrondis pour une touche moderne */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Ombre légère pour donner de la profondeur */
+
+    /* Typographie de base (peut être héritée ou surchargée) */
+    font-family: Arial, sans-serif;
+    color: #333333;
+    /* Couleur de texte sombre */
+
+    /* Transitions (pour les effets au survol par exemple) */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet au survol de la carte */
+.recette-card:hover {
+    transform: translateY(-5px);
+    /* Remonte légèrement la carte */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Ombre plus prononcée */
+}
+
+.card-title {
+    font-size: 1.5em;
+    /* Taille du titre */
+    font-weight: bold;
+    /* Gras */
+    margin-bottom: 10px;
+    /* Espacement en dessous du titre */
+    color: #2c3e50;
+    /* Couleur plus foncée pour le titre */
+}
+
+/* .card-subtitle {
+  font-size: 0.9em;
+  color: #7f8c8d; Gris clair
+  margin-bottom: 10px;
+} */
+
+.card-text {
+    font-size: 1em;
+    line-height: 1.6;
+    /* Meilleure lisibilité */
+    margin-bottom: 15px;
+    /* Espacement en dessous du texte */
+}
+
+/* .card-image {
+    background-color: antiquewhite;
+  width: 100%; L'image prend toute la largeur de la carte
+  height: 180px; Hauteur fixe pour l'image
+  object-fit: cover; Assure que l'image couvre bien la zone sans être déformée
+  border-radius: 8px 8px 0 0; Arrondit seulement les coins supérieurs de l'image
+  margin-bottom: 15px; Espacement en dessous de l'image
+} */
+
+.card-btn {
+    display: inline-block;
+    /* Permet d'appliquer padding et margin */
+    padding: 10px 15px;
+    background-color: #e99b36;
+    color: white;
+    text-decoration: none;
+    /* Supprime le soulignement par défaut des liens */
+    border-radius: 5px;
+    /* Coins arrondis pour le bouton */
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+    /* Aligne le bouton à gauche dans le flex container */
+}
+
+.card-btn:hover {
+    background-color: #bb6a00;
+    /* Assombrissement au survol */
+}
