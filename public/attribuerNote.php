@@ -26,7 +26,7 @@ $matieres = $gestion->listerMatieres();
 ?>
 
 <h2>Attribuer Note :</h2>
-
+<section class="formulaire">
 <form action="traitementNote.php" method="POST">
         <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars($_SESSION['csrf_token']); ?>">
     <select name="idEtudiant">
@@ -60,3 +60,4 @@ $matieres = $gestion->listerMatieres();
 
     <input type="submit" value="Envoyer" id="bouton">
 </form>
+</section>

@@ -19,7 +19,7 @@ $etudiants = $gestion->listerEtudiants();
 ?>
 
 <h2>Ajouter Etudiant :</h2>
-
+<section class="formulaire">
 <form action="traitementEtudiant.php" method="POST">
     <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars($_SESSION['csrf_token']); ?>">
     <label for="">Nom :</label>
@@ -31,7 +31,7 @@ $etudiants = $gestion->listerEtudiants();
 
     <input type="submit" value="Envoyer" id="bouton">
 </form>
-
+</section>
 
 <table>
     <tr class="tableau">

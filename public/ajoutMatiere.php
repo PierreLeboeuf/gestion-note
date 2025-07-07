@@ -20,7 +20,7 @@ $matieres = $gestion->listerMatieres();
 ?>
 
 <h2>Ajouter Matière :</h2>
-
+<section class="formulaire">
 <form action="traitementMatiere.php" method="POST">
         <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars($_SESSION['csrf_token']); ?>">
     <label for="">Nom Matière :</label>
@@ -30,7 +30,7 @@ $matieres = $gestion->listerMatieres();
   
     <input type="submit" value="Envoyer" id="bouton">
 </form>
-
+</section>
 <table>
     <tr class="tableau">
         <th>Matières</th>

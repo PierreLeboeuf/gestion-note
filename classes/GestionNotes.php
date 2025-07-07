@@ -5,6 +5,7 @@
  <?php
     //  Database::getConnection();
     require "../includes/Database.php";
+require "Personne.php";
     require "Etudiant.php";
     require "Matiere.php";
      require "Note.php";

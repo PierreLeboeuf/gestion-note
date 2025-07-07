@@ -3,6 +3,7 @@
 
 
 require "../classes/GestionNotes.php";
+require_once '../classes/Personne.php';
 include '../includes/header.php';
 include '../includes/menu.php';
 ?>

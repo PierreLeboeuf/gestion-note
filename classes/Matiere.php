@@ -8,12 +8,14 @@ class Matiere {
     private $id;
     private $nomMatiere;
     private $codeMatiere;
+    private $bareme;
   
           // Constructeur pour initialiser les propriétés
-    public function __construct($id,$nomMatiere,$codeMatiere) {
+    public function __construct($id,$nomMatiere,$codeMatiere,$bareme = 20) {
         $this->id = $id;
         $this->nomMatiere = $nomMatiere;
         $this->codeMatiere = $codeMatiere;
+        $this->bareme = $bareme;  
     }
 
 

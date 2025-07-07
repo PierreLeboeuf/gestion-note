@@ -9,10 +9,14 @@ abstract class Personne
     private $prenom;
     private $age;
 
-        public function __construct($nom,$prenom,$age) {
+        public function __construct($nom,$prenom) {
         $this->nom = $nom;
         $this->prenom = $prenom;
-        $this->age = $age;
+        // $this->age = $age;
+    }
+
+    public function getNomComplet(){
+        return $this->nom . " " . $this->prenom;
     }
 }
 ?>
